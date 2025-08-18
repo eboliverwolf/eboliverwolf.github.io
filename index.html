@@ -65,10 +65,10 @@
     .muted{color:var(--muted)}
 
     /* Stories grid */
-    .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:18px}
+    .grid{display:grid; grid-template-columns:1fr; gap:18px}
     .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.0)); border:1px solid var(--border); border-radius:16px; padding:22px; box-shadow:var(--shadow); backdrop-filter: blur(4px)}
-    .cover{height:280px; border-radius:12px; border:1px solid var(--border); display:grid; place-items:center; margin-bottom:12px; background:radial-gradient(220px 120px at 70% 10%, rgba(178,30,53,.18), transparent 60%), linear-gradient(180deg, #111217, #0b0c10)}
-    .cover img{max-width:100%; max-height:100%; object-fit:contain; border-radius:12px; display:block; margin:auto}
+    .cover{border-radius:12px; border:1px solid var(--border); display:block; margin-bottom:12px; background:linear-gradient(180deg, #111217, #0b0c10); box-shadow:var(--shadow); overflow:hidden}
+    .cover img{width:100%; height:auto; display:block; border-radius:12px}
     .cover svg{width:32px;height:32px;fill:var(--fg); opacity:.9}
     .card h3{margin:6px 0 6px}
     .pill{display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid var(--border); font-size:12px; color:var(--muted); margin-right:8px}
